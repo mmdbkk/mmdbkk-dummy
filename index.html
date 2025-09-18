@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MMD Prive’ | Bangkok</title>
+  <meta name="description" content="MMD Prive’ – พื้นที่เงียบหรูสำหรับการดูแลส่วนบุคคลในกรุงเทพฯ" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="MMD Prive’ | Bangkok" />
+  <meta property="og:description" content="พื้นที่เงียบหรูสำหรับการดูแลส่วนบุคคลในกรุงเทพฯ" />
+  <meta property="og:image" content="https://mmdbkk.com/og-image.jpg" />
+  <meta property="og:url" content="https://mmdbkk.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Optima&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Optima', sans-serif;
+      background-color: #f8f6f3;
+      color: #2c2c2c;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .language-toggle button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .th, .en { display: none; }
+    .active { display: block; }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="language-toggle">
+    <button onclick="switchLang('th')">ภาษาไทย</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <div class="th active">
+    <h1>MMD Prive’</h1>
+    <p>พื้นที่เงียบหรูสำหรับการดูแลส่วนบุคคลในกรุงเทพฯ  
+    เราให้ความสำคัญกับความเป็นส่วนตัว ความปลอดภัย และความครอบคลุมทางอัตลักษณ์  
+    โปรดติดต่อทีมงานโดยตรงเพื่อรับบริการที่เหมาะกับคุณ</p>
+  </div>
+
+  <div class="en">
+    <h1>MMD Prive’</h1>
+    <p>A quiet luxury space for personal care in Bangkok.  
+    We prioritize privacy, safety, and inclusive identity care.  
+    Please contact our team directly for tailored services.</p>
+  </div>
+
+  <footer>
+    <div class="th active">
+      <p>© 2025 MMD Prive’ | ข้อมูลทั้งหมดได้รับการดูแลอย่างปลอดภัย</p>
+      <p><a href="https://lifestyle.mmdbkk.com/privacy" target="_blank">ดูนโยบายความเป็นส่วนตัว</a></p>
+    </div>
+    <div class="en">
+      <p>© 2025 MMD Prive’ | All information is securely managed</p>
+      <p><a href="https://lifestyle.mmdbkk.com/privacy" target="_blank">View Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.th').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.en').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.' + lang).forEach(el => el.classList.add('active'));
+    }
+  </script>
+
+</body>
+</html>
